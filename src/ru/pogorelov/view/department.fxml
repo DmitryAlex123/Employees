@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pogorelov.controller.department_controller">
+   <children>
+      <Label layoutX="204.0" layoutY="14.0" text="Управление отделами">
+         <font>
+            <Font name="Garamond Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="509.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" text="X" />
+      <TableView fx:id="departments_table" layoutX="6.0" layoutY="48.0" prefHeight="197.0" prefWidth="520.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="24.0" text="id" />
+            <TableColumn fx:id="name" prefWidth="160.0" text="Название" />
+            <TableColumn fx:id="phone" prefWidth="183.0" text="Телефон" />
+            <TableColumn fx:id="email" prefWidth="152.0" text="Эл. адрес" />
+        </columns>
+      </TableView>
+      <Button layoutX="251.0" layoutY="263.0" mnemonicParsing="false" onAction="#addDepartmentAction" prefHeight="25.0" prefWidth="118.0" text="Добавить отдел" />
+      <Label layoutX="32.0" layoutY="264.0" text="Открыть окно добавления:">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="294.0" text="Открыть окно изменения:">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="251.0" layoutY="295.0" mnemonicParsing="false" onAction="#changeDepartmentAction" prefHeight="25.0" prefWidth="118.0" text="Изменить отдел" />
+      <Label layoutX="32.0" layoutY="323.0" text="Открыть окно удаления:">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="251.0" layoutY="327.0" mnemonicParsing="false" onAction="#deleteDepartmentAction" prefHeight="25.0" prefWidth="118.0" text="Удалить отдел" />
+   </children>
+</AnchorPane>

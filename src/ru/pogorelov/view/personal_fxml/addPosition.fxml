@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="286.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pogorelov.controller.personal_controllers.add_position_controller">
+   <children>
+      <Label layoutX="130.0" layoutY="27.0" text="Назначить ">
+         <font>
+            <Font name="Garamond Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="113.0" text="на должность">
+         <font>
+            <Font name="Garamond" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobox" layoutX="74.0" layoutY="153.0" prefHeight="25.0" prefWidth="225.0" />
+      <Button layoutX="132.0" layoutY="212.0" mnemonicParsing="false" onAction="#applyAction" prefHeight="25.0" prefWidth="103.0" text="Применить" />
+      <Button layoutX="334.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" text="X" />
+      <Label fx:id="fio" layoutX="63.0" layoutY="67.0" text="Фамилия Имя Отчество">
+         <font>
+            <Font name="Garamond Italic" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
